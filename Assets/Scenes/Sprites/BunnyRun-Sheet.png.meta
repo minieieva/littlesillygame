@@ -1,10 +1,22 @@
 fileFormatVersion: 2
-guid: ddfaccddd37cb443eb357eb0b8d80cb9
+guid: db3b8a05d080cec4fba614b00701e979
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2436689576485346197
-    second: Tile2_0
+      213: 2260293621537302296
+    second: BunnyRun-Sheet_0
+  - first:
+      213: -2256288860343170199
+    second: BunnyRun-Sheet_1
+  - first:
+      213: -1593217988633577835
+    second: BunnyRun-Sheet_2
+  - first:
+      213: 5630314894562602093
+    second: BunnyRun-Sheet_3
+  - first:
+      213: -6869691061555620144
+    second: BunnyRun-Sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +58,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 17
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +112,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tile2_0
+      name: BunnyRun-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 6
+        y: 4
+        width: 20
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +127,96 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 59b5e4a724cd0d120800000000000000
-      internalID: 2436689576485346197
+      spriteID: 817efcfb21d2e5f10800000000000000
+      internalID: 2260293621537302296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyRun-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 5
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b03906c3d00b0e0800000000000000
+      internalID: -2256288860343170199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyRun-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 5
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596bbb93ea0c3e9e0800000000000000
+      internalID: -1593217988633577835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyRun-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 5
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6caeffd095e22e40800000000000000
+      internalID: 5630314894562602093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BunnyRun-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 5
+        width: 19
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d61d4f6064f9a0a0800000000000000
+      internalID: -6869691061555620144
       vertices: []
       indices: 
       edges: []
@@ -125,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tile2_0: 2436689576485346197
+      BunnyRun-Sheet_0: 2260293621537302296
+      BunnyRun-Sheet_1: -2256288860343170199
+      BunnyRun-Sheet_2: -1593217988633577835
+      BunnyRun-Sheet_3: 5630314894562602093
+      BunnyRun-Sheet_4: -6869691061555620144
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
