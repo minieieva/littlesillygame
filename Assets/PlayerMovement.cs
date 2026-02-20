@@ -25,17 +25,17 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void Forward(Vector2 direction)
+    public void Forward(Vector2 direction)
     {
         Vector3Int Cell = Tilemap.WorldToCell(transform.position);
         Vector3Int TargetPosition = Cell + new Vector3Int((int)direction.x, (int)direction.y, 0);
 
-        // if (!Tilemap.HasTile(TargetPosition))
-        //     return;
+        // Chat Solution
         BoundsInt bounds = Tilemap.cellBounds;
 
         if (!bounds.Contains(TargetPosition))
             return;
+        //end of chat solution
 
         Vector2 FinalPosition = Tilemap.GetCellCenterWorld(TargetPosition);
         transform.position = FinalPosition;

@@ -9,7 +9,7 @@ public class MovementPlayer : MonoBehaviour
     private Vector2 InitialInput;
     private Vector2 direction;
 
-    private void OnMove(InputValue input)
+    public void OnMove(InputValue input)
     {
         InitialInput = input.Get<Vector2>();
 
