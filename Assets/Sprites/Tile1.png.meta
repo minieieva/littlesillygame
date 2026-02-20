@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0222528c3673642adb37f7e3ed2f08ef
+guid: 165b43f976ee7db45b54535d9f743343
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -174610454801994632
-    second: Bunny_side (1)_0
+      213: -347702476747834141
+    second: Tile1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bunny_side (1)_0
+      name: Tile1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 87c257b67b8a39df0800000000000000
-      internalID: -174610454801994632
+      spriteID: 3ecfbe98076bc2bf0800000000000000
+      internalID: -347702476747834141
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bunny_side (1)_0: -174610454801994632
+      Tile1_0: -347702476747834141
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
