@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1710911548575321522}
+  - component: {fileID: -5203869604992551250}
+  - component: {fileID: -1626209689764389988}
   - component: {fileID: -5615619582097268610}
   m_Layer: 0
   m_Name: Rabbit
@@ -32,6 +34,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5203869604992551250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989861390535805692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b184f64fcd1ec6b4bb4382a98b8e3c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Bunny
+--- !u!114 &-1626209689764389988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989861390535805692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47eacf0fb2881e34d9a2036229f6c6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BunnyJumpAnimation
+  frames:
+  - {fileID: 2260293621537302296, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -2256288860343170199, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -1593217988633577835, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: 5630314894562602093, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -6869691061555620144, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: 5630314894562602093, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -1593217988633577835, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -2256288860343170199, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: 2260293621537302296, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  frameRate: 24
 --- !u!212 &-5615619582097268610
 SpriteRenderer:
   serializedVersion: 2

@@ -8,6 +8,7 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] private Tilemap Tilemap;
     private Vector2 InitialInput;
     private Vector2 direction;
+    private BunnyJumpAnimation animBunny;
 
     public void OnMove(InputValue input)
     {
@@ -34,6 +35,10 @@ public class MovementPlayer : MonoBehaviour
             return;
 
         Vector2 FinalPosition = Tilemap.GetCellCenterWorld(TargetPosition);
+
+
+
+        animBunny.PlayForDuration(); // plays 24 frames = 1 sec (4 frames * 6)
         transform.position = FinalPosition;
     }
 
@@ -53,7 +58,7 @@ public class MovementPlayer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        animBunny = GetComponent<BunnyJumpAnimation>();
     }
 
     // Update is called once per frame
