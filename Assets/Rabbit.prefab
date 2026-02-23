@@ -10,10 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1710911548575321522}
   - component: {fileID: -5615619582097268610}
+  - component: {fileID: 6900304987624604935}
+  - component: {fileID: 944512494242024270}
+  - component: {fileID: 4118553781134255986}
   m_Layer: 0
   m_Name: Rabbit
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -79,7 +82,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 2260293621537302296, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -91,3 +94,67 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &6900304987624604935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989861390535805692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d868467066ff54a8f96058ade67ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementPlayer
+  Tilemap: {fileID: 1659197633706967497, guid: 457d64e8f77b3c04d922298f0c1d45b6, type: 3}
+  direction: {x: 0, y: 0}
+--- !u!114 &944512494242024270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989861390535805692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47eacf0fb2881e34d9a2036229f6c6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BunnyJumpAnimation
+  frames:
+  - {fileID: 2260293621537302296, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -2256288860343170199, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -1593217988633577835, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: 5630314894562602093, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: -6869691061555620144, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  - {fileID: 2260293621537302296, guid: db3b8a05d080cec4fba614b00701e979, type: 3}
+  frameRate: 24
+--- !u!114 &4118553781134255986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989861390535805692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: cc5dce20a9de4ea40aab1970cf59e335, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}

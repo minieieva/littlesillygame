@@ -11,25 +11,43 @@ public class BunnyJumpAnimation : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void PlayForDuration()
+    public void PlayRight()
     {
-        StartCoroutine(PlayJumpAnimation());
+        StartCoroutine(PlayRightJump());
     }
 
-    public IEnumerator PlayJumpAnimation()
+    public void PlayLeft()
+    {
+        StartCoroutine(PlayLeftJump());
+    }
+
+    public IEnumerator PlayRightJump()
     {
         float frameDelay = 1f / frameRate;
         foreach (Sprite frame in frames)
-         {
+        {
+            spriteRenderer.flipX = false;
             spriteRenderer.sprite = frame;
             yield return new WaitForSeconds(frameDelay);
-         }
+        }
+
+    }
+
+    public IEnumerator PlayLeftJump()
+    {
+        float frameDelay = 1f / frameRate;
+        foreach (Sprite frame in frames)
+        {
+            spriteRenderer.flipX = true;
+            spriteRenderer.sprite = frame;
+            yield return new WaitForSeconds(frameDelay);
+        }
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }
