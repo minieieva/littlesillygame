@@ -4,6 +4,7 @@ using System.Collections;
 public class BunnyJumpAnimation : MonoBehaviour
 {
     [SerializeField] public Sprite[] frames;
+    [SerializeField] public Sprite[] framesDown;
     [SerializeField] public Sprite[] framesUp;
     [SerializeField] public float frameRate = 24f;
     private SpriteRenderer spriteRenderer;
@@ -25,6 +26,11 @@ public class BunnyJumpAnimation : MonoBehaviour
     public void PlayDown()
     {
         StartCoroutine(PlayDownJump());
+    }
+
+    public void PlayUp()
+    {
+        StartCoroutine(PlayUpJump());
     }
 
     public IEnumerator PlayRightJump()
@@ -52,6 +58,17 @@ public class BunnyJumpAnimation : MonoBehaviour
     }
 
     public IEnumerator PlayDownJump()
+    {
+        float frameDelay = 1f / frameRate;
+        foreach (Sprite frame in framesDown)
+        {
+            spriteRenderer.sprite = frame;
+            yield return new WaitForSeconds(frameDelay);
+        }
+
+    }
+
+    public IEnumerator PlayUpJump()
     {
         float frameDelay = 1f / frameRate;
         foreach (Sprite frame in framesUp)

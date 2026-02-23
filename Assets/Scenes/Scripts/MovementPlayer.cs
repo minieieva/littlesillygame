@@ -41,6 +41,10 @@ public class MovementPlayer : MonoBehaviour
         {
             animBunny.PlayDown();
         }
+        else if (direction.y > 0.1)
+        {
+            animBunny.PlayUp();
+        }
     }
 
     private void Forward(Vector2 direction)
