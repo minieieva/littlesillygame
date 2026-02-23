@@ -4,6 +4,8 @@ using System.Collections;
 public class BunnyJumpAnimation : MonoBehaviour
 {
     [SerializeField] public Sprite[] frames;
+    [SerializeField] public Sprite[] framesDown;
+    [SerializeField] public Sprite[] framesUp;
     [SerializeField] public float frameRate = 24f;
     private SpriteRenderer spriteRenderer;
     private void Awake()
@@ -11,25 +13,75 @@ public class BunnyJumpAnimation : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
-    public void PlayForDuration()
+    public void PlayRight()
     {
-        StartCoroutine(PlayJumpAnimation());
+        StartCoroutine(PlayRightJump());
     }
 
-    public IEnumerator PlayJumpAnimation()
+    public void PlayLeft()
+    {
+        StartCoroutine(PlayLeftJump());
+    }
+
+    public void PlayDown()
+    {
+        StartCoroutine(PlayDownJump());
+    }
+
+    public void PlayUp()
+    {
+        StartCoroutine(PlayUpJump());
+    }
+
+    public IEnumerator PlayRightJump()
     {
         float frameDelay = 1f / frameRate;
         foreach (Sprite frame in frames)
-         {
+        {
+            spriteRenderer.flipX = false;
             spriteRenderer.sprite = frame;
             yield return new WaitForSeconds(frameDelay);
-         }
+        }
+
+    }
+
+    public IEnumerator PlayLeftJump()
+    {
+        float frameDelay = 1f / frameRate;
+        foreach (Sprite frame in frames)
+        {
+            spriteRenderer.flipX = true;
+            spriteRenderer.sprite = frame;
+            yield return new WaitForSeconds(frameDelay);
+        }
+
+    }
+
+    public IEnumerator PlayDownJump()
+    {
+        float frameDelay = 1f / frameRate;
+        foreach (Sprite frame in framesDown)
+        {
+            spriteRenderer.sprite = frame;
+            yield return new WaitForSeconds(frameDelay);
+        }
+
+    }
+
+    public IEnumerator PlayUpJump()
+    {
+        float frameDelay = 1f / frameRate;
+        foreach (Sprite frame in framesUp)
+        {
+            spriteRenderer.sprite = frame;
+            yield return new WaitForSeconds(frameDelay);
+        }
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

@@ -1,10 +1,16 @@
 fileFormatVersion: 2
-guid: aa31241eebb98094c8e1a9e483a9e0e3
+guid: 162b161da8308334b988d38619761a93
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8455617341706603095
-    second: Bunny_back (1)_0
+      213: -4477264562958493434
+    second: bunny_up_0
+  - first:
+      213: 819485195653741036
+    second: bunny_up_1
+  - first:
+      213: 7861449940683334457
+    second: bunny_up_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +52,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 19
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,8 +80,8 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
+    textureFormat: 4
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Bunny_back (1)_0
+      name: bunny_up_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 15
-        height: 16
+        x: 7
+        y: 3
+        width: 13
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +121,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 75a0e092c23685570800000000000000
-      internalID: 8455617341706603095
+      spriteID: 6091a6ff99f8dd1c0800000000000000
+      internalID: -4477264562958493434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bunny_up_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 4
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9f1a191756f5b00800000000000000
+      internalID: 819485195653741036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bunny_up_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 2
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93322fdb11b791d60800000000000000
+      internalID: 7861449940683334457
       vertices: []
       indices: 
       edges: []
@@ -125,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Bunny_back (1)_0: 8455617341706603095
+      bunny_up_0: -4477264562958493434
+      bunny_up_1: 819485195653741036
+      bunny_up_2: 7861449940683334457
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

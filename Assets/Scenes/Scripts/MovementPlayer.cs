@@ -2,13 +2,14 @@ using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
+using UnityEditor.Experimental.GraphView;
 
 public class MovementPlayer : MonoBehaviour
 {
     [SerializeField] public Tilemap Tilemap;
     private Vector2 InitialInput;
     public Vector2 direction;
-    // private JumpAnimation animBunny;
+    private BunnyJumpAnimation animBunny;
 
     public void OnMove(InputValue input)
     {
@@ -26,8 +27,29 @@ public class MovementPlayer : MonoBehaviour
         }
     }
 
+    private void AnimationBasedOnDirection(Vector2 direction, Vector2 FinalPosition)
+    {
+        if (direction.x > 0.1)
+        {
+            animBunny.PlayRight();
+        }
+        else if (direction.x < -0.1)
+        {
+            animBunny.PlayLeft();
+        }
+        else if (direction.y < -0.1)
+        {
+            animBunny.PlayDown();
+        }
+        else if (direction.y > 0.1)
+        {
+            animBunny.PlayUp();
+        }
+    }
+
     private void Forward(Vector2 direction)
     {
+
         Vector3Int Cell = Tilemap.WorldToCell(transform.position);
         Vector3Int TargetPosition = Cell + new Vector3Int((int)direction.x, (int)direction.y, 0);
 
@@ -39,6 +61,12 @@ public class MovementPlayer : MonoBehaviour
         // 
 
         Vector2 FinalPosition = Tilemap.GetCellCenterWorld(TargetPosition);
+
+
+        //Directional movement animation START
+        AnimationBasedOnDirection(direction, FinalPosition);
+
+        transform.position = FinalPosition;
 
         // Check if a collider exist at target position https://docs.unity3d.com/ScriptReference/Physics2D.OverlapPoint.html
         Collider2D hit = Physics2D.OverlapPoint(FinalPosition);
@@ -56,6 +84,7 @@ public class MovementPlayer : MonoBehaviour
                 return; 
             
             hit.transform.position = FinalblockTargetPos;
+
         }
 
         // animBunny.PlayForDuration(); // plays 24 frames = 1 sec (4 frames * 6)
@@ -83,7 +112,8 @@ public class MovementPlayer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // animBunny = GetComponent<JumpAnimation>();
+        //set animBunny to an instance of an object for directional animation
+        animBunny = GetComponent<BunnyJumpAnimation>();
     }
 
     // Update is called once per frame
