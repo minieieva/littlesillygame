@@ -2,6 +2,7 @@ using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
+using UnityEditor.Experimental.GraphView;
 
 public class MovementPlayer : MonoBehaviour
 {
@@ -36,7 +37,10 @@ public class MovementPlayer : MonoBehaviour
         {
             animBunny.PlayLeft();
         }
-        transform.position = FinalPosition;
+        else if (direction.y < -0.1)
+        {
+            animBunny.PlayDown();
+        }
     }
 
     private void Forward(Vector2 direction)
@@ -57,6 +61,8 @@ public class MovementPlayer : MonoBehaviour
 
         //Directional movement animation START
         AnimationBasedOnDirection(direction, FinalPosition);
+
+        transform.position = FinalPosition;
 
         // Check if a collider exist at target position https://docs.unity3d.com/ScriptReference/Physics2D.OverlapPoint.html
         Collider2D hit = Physics2D.OverlapPoint(FinalPosition);
