@@ -9,11 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1710911548575321522}
-  - component: {fileID: -5203869604992551250}
   - component: {fileID: -1626209689764389988}
   - component: {fileID: -5615619582097268610}
   - component: {fileID: -6659053918186606715}
   - component: {fileID: -1670208654021230939}
+  - component: {fileID: 7493241501703569753}
   m_Layer: 0
   m_Name: Rabbit
   m_TagString: Player
@@ -36,18 +36,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &-5203869604992551250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7989861390535805692}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b184f64fcd1ec6b4bb4382a98b8e3c49, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Bunny
 --- !u!114 &-1626209689764389988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,3 +188,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &7493241501703569753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7989861390535805692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d868467066ff54a8f96058ade67ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MovementPlayer
+  Tilemap: {fileID: 0}
+  direction: {x: 0, y: 0}
