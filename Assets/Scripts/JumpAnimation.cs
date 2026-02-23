@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class BunnyJumpAnimation : MonoBehaviour
+public class JumpAnimation : MonoBehaviour
 {
     [SerializeField] public Sprite[] frames;
     [SerializeField] public float frameRate = 12f;

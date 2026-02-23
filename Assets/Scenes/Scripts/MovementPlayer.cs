@@ -8,7 +8,7 @@ public class MovementPlayer : MonoBehaviour
     [SerializeField] public Tilemap Tilemap;
     private Vector2 InitialInput;
     public Vector2 direction;
-    private BunnyJumpAnimation animBunny;
+    // private JumpAnimation animBunny;
 
     public void OnMove(InputValue input)
     {
@@ -58,7 +58,7 @@ public class MovementPlayer : MonoBehaviour
             hit.transform.position = FinalblockTargetPos;
         }
 
-        animBunny.PlayForDuration(); // plays 24 frames = 1 sec (4 frames * 6)
+        // animBunny.PlayForDuration(); // plays 24 frames = 1 sec (4 frames * 6)
         transform.position = FinalPosition;
     }
 
@@ -83,7 +83,7 @@ public class MovementPlayer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        animBunny = GetComponent<BunnyJumpAnimation>();
+        // animBunny = GetComponent<JumpAnimation>();
     }
 
     // Update is called once per frame

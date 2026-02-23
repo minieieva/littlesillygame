@@ -3,12 +3,12 @@ using System;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
-public class MovementPlayer : MonoBehaviour
+public class Jump : MonoBehaviour
 {
     [SerializeField] private Tilemap Tilemap;
     private Vector2 InitialInput;
     private Vector2 direction;
-    private BunnyJumpAnimation animBunny;
+    private JumpAnimation animBunny;
 
     private void OnMove(InputValue input)
     {
@@ -64,7 +64,7 @@ public class MovementPlayer : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        animBunny = GetComponent<BunnyJumpAnimation>();
+        animBunny = GetComponent<JumpAnimation>();
     }
 
     // Update is called once per frame
