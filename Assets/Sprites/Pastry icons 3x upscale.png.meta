@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 3d5ca8abffc070b47973e0dd3eef5cfd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5708684754791406466
+    second: Pastry icons 3x upscale_0
+  - first:
+      213: 4233893205844067501
+    second: Pastry icons 3x upscale_1
+  - first:
+      213: 3707420516488871282
+    second: Pastry icons 3x upscale_2
+  - first:
+      213: -7926192897847444755
+    second: Pastry icons 3x upscale_3
+  - first:
+      213: -3376166265203373501
+    second: Pastry icons 3x upscale_4
+  - first:
+      213: -3950136682969421650
+    second: Pastry icons 3x upscale_5
+  - first:
+      213: 1241731875889001990
+    second: Pastry icons 3x upscale_6
+  - first:
+      213: -1792885773001362177
+    second: Pastry icons 3x upscale_7
+  - first:
+      213: -5927992003546204579
+    second: Pastry icons 3x upscale_8
+  - first:
+      213: 697097139020027746
+    second: Pastry icons 3x upscale_9
+  - first:
+      213: -7168529113152119299
+    second: Pastry icons 3x upscale_10
+  - first:
+      213: 7867040623014189860
+    second: Pastry icons 3x upscale_11
+  - first:
+      213: -6824515976772965096
+    second: Pastry icons 3x upscale_12
+  - first:
+      213: 6190177611665880728
+    second: Pastry icons 3x upscale_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 97
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7468ff167da6c0b0800000000000000
+      internalID: -5708684754791406466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 146
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da48647407fc1ca30800000000000000
+      internalID: 4233893205844067501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_2
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 146
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27d70562157637330800000000000000
+      internalID: 3707420516488871282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 143
+        width: 193
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dea349edd81800290800000000000000
+      internalID: -7926192897847444755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_4
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 47
+        width: 146
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34a45e36ba27521d0800000000000000
+      internalID: -3376166265203373501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 107
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea82e559d9b4e29c0800000000000000
+      internalID: -3950136682969421650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_6
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 101
+        width: 97
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 606b4a8ef848b3110800000000000000
+      internalID: 1241731875889001990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff4f66973e36e17e0800000000000000
+      internalID: -1792885773001362177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_8
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 35
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56b54d3eaa8bbda0800000000000000
+      internalID: -5927992003546204579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_9
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 47
+        width: 44
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 267da3197269ca900800000000000000
+      internalID: 697097139020027746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_10
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 47
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd958880c4448c90800000000000000
+      internalID: -7168529113152119299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_11
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 47
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42b1458e3c75d2d60800000000000000
+      internalID: 7867040623014189860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 97
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d287080e27a41a0800000000000000
+      internalID: -6824515976772965096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastry icons 3x upscale_13
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 2
+        width: 41
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896bbe7adbde7e550800000000000000
+      internalID: 6190177611665880728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pastry icons 3x upscale_0: -5708684754791406466
+      Pastry icons 3x upscale_1: 4233893205844067501
+      Pastry icons 3x upscale_10: -7168529113152119299
+      Pastry icons 3x upscale_11: 7867040623014189860
+      Pastry icons 3x upscale_12: -6824515976772965096
+      Pastry icons 3x upscale_13: 6190177611665880728
+      Pastry icons 3x upscale_2: 3707420516488871282
+      Pastry icons 3x upscale_3: -7926192897847444755
+      Pastry icons 3x upscale_4: -3376166265203373501
+      Pastry icons 3x upscale_5: -3950136682969421650
+      Pastry icons 3x upscale_6: 1241731875889001990
+      Pastry icons 3x upscale_7: -1792885773001362177
+      Pastry icons 3x upscale_8: -5927992003546204579
+      Pastry icons 3x upscale_9: 697097139020027746
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
