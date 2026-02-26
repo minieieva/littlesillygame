@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: d6d3c5c478f167f4291b9b38bd0d7adb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1414490216117058297
+    second: 4-lilia_0
+  - first:
+      213: -1998977792125229011
+    second: 4-lilia_1
+  - first:
+      213: -1576327622211660774
+    second: 4-lilia_2
+  - first:
+      213: -1967009161805828228
+    second: 4-lilia_3
+  - first:
+      213: 5259514842881334763
+    second: 4-lilia_4
+  - first:
+      213: 4957879987025495781
+    second: 4-lilia_5
+  - first:
+      213: -1988686532039936397
+    second: 4-lilia_6
+  - first:
+      213: 7761947387234689288
+    second: 4-lilia_7
+  - first:
+      213: -2063047759017904438
+    second: 4-lilia_8
+  - first:
+      213: 7257960084529307169
+    second: 4-lilia_9
+  - first:
+      213: 5957149701204770913
+    second: 4-lilia_10
+  - first:
+      213: 2388102006687021922
+    second: 4-lilia_11
+  - first:
+      213: 2549641861743008194
+    second: 4-lilia_12
+  - first:
+      213: 4830960128307875680
+    second: 4-lilia_13
+  - first:
+      213: 7756502418135040966
+    second: 4-lilia_14
+  - first:
+      213: -5397123152032933987
+    second: 4-lilia_15
+  - first:
+      213: -2637773316841443049
+    second: 4-lilia_16
+  - first:
+      213: -5308489903485228937
+    second: 4-lilia_17
+  - first:
+      213: -2938558676706834302
+    second: 4-lilia_18
+  - first:
+      213: 4027779215294786775
+    second: 4-lilia_19
+  - first:
+      213: 5254781712963289398
+    second: 4-lilia_20
+  - first:
+      213: 2564920770672382487
+    second: 4-lilia_21
+  - first:
+      213: -9217872106985716981
+    second: 4-lilia_22
+  - first:
+      213: -2850537415506317641
+    second: 4-lilia_23
+  - first:
+      213: -6956322690811006016
+    second: 4-lilia_24
+  - first:
+      213: 3403005743038635043
+    second: 4-lilia_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 4-lilia_0
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 420
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fa3ce57b5741a310800000000000000
+      internalID: 1414490216117058297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_1
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 447
+        width: 38
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d282b720a443244e0800000000000000
+      internalID: -1998977792125229011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_2
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 455
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14107c1162cf1ae0800000000000000
+      internalID: -1576327622211660774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_3
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 413
+        width: 32
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fef98c697c3b4e0800000000000000
+      internalID: -1967009161805828228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_4
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 368
+        width: 78
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed16dc22ec8df840800000000000000
+      internalID: 5259514842881334763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 228
+        width: 36
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e64ca9849dedc440800000000000000
+      internalID: 4957879987025495781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 299
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376f728b224c664e0800000000000000
+      internalID: -1988686532039936397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_7
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 282
+        width: 67
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 801256d260af7bb60800000000000000
+      internalID: 7761947387234689288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_8
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 328
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac672116ef49e53e0800000000000000
+      internalID: -2063047759017904438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_9
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 287
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e55581e3479b460800000000000000
+      internalID: 7257960084529307169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_10
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 230
+        width: 38
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1608226471c0ca250800000000000000
+      internalID: 5957149701204770913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_11
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 253
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26b3af35f1e342120800000000000000
+      internalID: 2388102006687021922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_12
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 224
+        width: 55
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c958a1c3c5226320800000000000000
+      internalID: 2549641861743008194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_13
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 189
+        width: 124
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06fcdd324a40b0340800000000000000
+      internalID: 4830960128307875680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 218
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c3c5648ad1a4ab60800000000000000
+      internalID: 7756502418135040966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_15
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 126
+        width: 165
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d975a02a6119915b0800000000000000
+      internalID: -5397123152032933987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_16
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 183
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71179a3d42fb46bd0800000000000000
+      internalID: -2637773316841443049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_17
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 50
+        width: 95
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778e301fe847456b0800000000000000
+      internalID: -5308489903485228937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_18
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 160
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2884f33e3742837d0800000000000000
+      internalID: -2938558676706834302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_19
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 50
+        width: 67
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dce8513bdb85e730800000000000000
+      internalID: 4027779215294786775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_20
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 109
+        width: 54
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631456d702cbce840800000000000000
+      internalID: 5254781712963289398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_21
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 103
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 712d2f4f9dd689320800000000000000
+      internalID: 2564920770672382487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_22
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 0
+        width: 90
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b038226382a831080800000000000000
+      internalID: -9217872106985716981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_23
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 95
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be29c9c25bd078d0800000000000000
+      internalID: -2850537415506317641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_24
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 0
+        width: 79
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3783f6e5d267f90800000000000000
+      internalID: -6956322690811006016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-lilia_25
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 4
+        width: 47
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c9e6281b7e93f20800000000000000
+      internalID: 3403005743038635043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      4-lilia_0: 1414490216117058297
+      4-lilia_1: -1998977792125229011
+      4-lilia_10: 5957149701204770913
+      4-lilia_11: 2388102006687021922
+      4-lilia_12: 2549641861743008194
+      4-lilia_13: 4830960128307875680
+      4-lilia_14: 7756502418135040966
+      4-lilia_15: -5397123152032933987
+      4-lilia_16: -2637773316841443049
+      4-lilia_17: -5308489903485228937
+      4-lilia_18: -2938558676706834302
+      4-lilia_19: 4027779215294786775
+      4-lilia_2: -1576327622211660774
+      4-lilia_20: 5254781712963289398
+      4-lilia_21: 2564920770672382487
+      4-lilia_22: -9217872106985716981
+      4-lilia_23: -2850537415506317641
+      4-lilia_24: -6956322690811006016
+      4-lilia_25: 3403005743038635043
+      4-lilia_3: -1967009161805828228
+      4-lilia_4: 5259514842881334763
+      4-lilia_5: 4957879987025495781
+      4-lilia_6: -1988686532039936397
+      4-lilia_7: 7761947387234689288
+      4-lilia_8: -2063047759017904438
+      4-lilia_9: 7257960084529307169
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

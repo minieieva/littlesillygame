@@ -1,3 +1,4 @@
+// tutorial of reference : https://youtu.be/YnwOoxtgZQI?si=Njv8zVZUXOR61koV
 using UnityEngine;
 using System;
 using UnityEngine.InputSystem;
@@ -10,9 +11,16 @@ public class MovementPlayer : MonoBehaviour
     private Vector2 InitialInput;
     public Vector2 direction;
     private BunnyJumpAnimation animBunny;
+    [SerializeField] private LayerMask pushableMask;
+    private bool isDead = false;
 
     public void OnMove(InputValue input)
     {
+        // stops the bunny from being able to still move after being hit
+        if (isDead)
+            return;
+        
+
         InitialInput = input.Get<Vector2>();
 
         direction = Cardinal(InitialInput);
@@ -25,6 +33,11 @@ public class MovementPlayer : MonoBehaviour
         {
             return;
         }
+    }
+    public void Die()
+    {
+        //bunny is dead 
+        isDead = true;
     }
 
     private void AnimationBasedOnDirection(Vector2 direction, Vector2 FinalPosition)
@@ -66,10 +79,10 @@ public class MovementPlayer : MonoBehaviour
         //Directional movement animation START
         AnimationBasedOnDirection(direction, FinalPosition);
 
-        transform.position = FinalPosition;
+        //transform.position = FinalPosition;
 
         // Check if a collider exist at target position https://docs.unity3d.com/ScriptReference/Physics2D.OverlapPoint.html
-        Collider2D hit = Physics2D.OverlapPoint(FinalPosition);
+        Collider2D hit = Physics2D.OverlapPoint(FinalPosition, pushableMask);
 
         if (hit != null){
             
@@ -80,9 +93,10 @@ public class MovementPlayer : MonoBehaviour
                 return;
             }
             Vector2 FinalblockTargetPos = Tilemap.GetCellCenterWorld(blockTarget);
+            // if something there return
             if (Physics2D.OverlapPoint(FinalblockTargetPos) != null)
                 return; 
-            
+            // else move block to target position
             hit.transform.position = FinalblockTargetPos;
 
         }
