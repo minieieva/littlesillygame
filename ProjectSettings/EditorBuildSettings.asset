@@ -8,5 +8,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/starting_screen.unity
+    guid: 1a0ebc7ba4a61e847aa7ecbcaac2b506
+  - enabled: 1
+    path: Assets/scene_Mariia.unity
+    guid: e58d5698bcc333d4bb7cf50f8f94edae
+  - enabled: 1
+    path: Assets/scene_Maya.unity
+    guid: 31a7468e4aef04c208a0640e76ebbccc
+  - enabled: 1
+    path: Assets/scripts.unity
+    guid: abffdcaa8bce5d34a95f0df19b5f6b1d
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
