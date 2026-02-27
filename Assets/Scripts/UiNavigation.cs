@@ -5,7 +5,7 @@ public class UiNavigation : MonoBehaviour
 {
     public void OnClickStartGame()
     {
-        string sceneDisplay = "scene_Mariia";
+        string sceneDisplay = "scripts";
         Debug.Log("Start the game");
         SceneManager.LoadScene(sceneDisplay);
     }

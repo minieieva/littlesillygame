@@ -185,7 +185,7 @@ MonoBehaviour:
   triggerCell: {x: -4, y: -2, z: 0}
   direction: {x: 0, y: -1}
   stepDelay: 0.15
-  targetObject: {fileID: 9043603992272006592, guid: 4b66c022eb1c9bc4c857a58f055cb208, type: 3}
+  targetObject: {fileID: 0}
 --- !u!114 &-4661923391808762181
 MonoBehaviour:
   m_ObjectHideFlags: 0
