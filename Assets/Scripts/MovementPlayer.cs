@@ -12,6 +12,8 @@ public class MovementPlayer : MonoBehaviour
     public Vector2 direction;
     private BunnyJumpAnimation animBunny;
     [SerializeField] private LayerMask pushableMask;
+    
+    
     public static bool isDead = false;
 
     public void OnMove(InputValue input)

@@ -6,6 +6,7 @@ public class Bunnydies : MonoBehaviour
     [SerializeField] public Sprite[] frames;
     [SerializeField] public float frameRate = 24f;
     private SpriteRenderer spriteRenderer;
+    public FaderBetweenLoses scriptFaderRef;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -23,6 +24,7 @@ public class Bunnydies : MonoBehaviour
             spriteRenderer.sprite = frame;
             yield return new WaitForSeconds(frameDelay);
         }
+        FadeAndLoad();
 
     }
 
