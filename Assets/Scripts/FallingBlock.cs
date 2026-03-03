@@ -9,7 +9,7 @@ public class FallingBlock : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Vector3Int triggerCell;
     [SerializeField] Vector2Int direction = Vector2Int.down;
-    [SerializeField] float stepDelay = 0.01f;
+    [SerializeField] float stepDelay = 0f;
     private Bunnydies BunnyDies;
     private Animations BlockBreaks;
     private MovementPlayer StopsMoving;
@@ -103,6 +103,6 @@ private IEnumerator DestroyAfterDelay()
     // Destroy(targetObject);
     
     yield return new WaitForSeconds(1);
-    SceneManager.LoadScene(0);
+    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 }
 }
