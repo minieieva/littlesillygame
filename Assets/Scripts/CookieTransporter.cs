@@ -1,6 +1,7 @@
 using System.Collections;
 using Unity.VectorGraphics;
 using UnityEngine;
+using UnityEngine.InputSystem.Processors;
 using UnityEngine.SceneManagement;
 using UnityEngine.Tilemaps;
 
@@ -25,6 +26,7 @@ public class CookieTransporter : MonoBehaviour
 
         if (playerCell.x == triggerCell.x && playerCell.y == triggerCell.y)
         {
+            MovementPlayer.isDead = true;
             triggerCell.x = 0;
             triggerCell.y = 0;
             animCookie.PlayTransportAnimation();
