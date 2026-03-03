@@ -4,7 +4,7 @@ using UnityEngine;
 public class CookieAnimation : MonoBehaviour
 {
     [SerializeField] public Sprite[] frames;
-    [SerializeField] public float frameRate = 24f;
+    [SerializeField] public float frameRate = 1f;
     private SpriteRenderer spriteRenderer;
     private void Awake()
     {

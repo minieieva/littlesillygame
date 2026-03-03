@@ -47,12 +47,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CookieAnimation
   frames:
-  - {fileID: -8597148607275127856, guid: b6c18587589658041a584e38dbc35c13, type: 3}
-  - {fileID: 7195972972059270497, guid: b6c18587589658041a584e38dbc35c13, type: 3}
-  - {fileID: 3213263927665980656, guid: b6c18587589658041a584e38dbc35c13, type: 3}
-  - {fileID: 399455777676110974, guid: b6c18587589658041a584e38dbc35c13, type: 3}
-  - {fileID: 4184913225726809613, guid: b6c18587589658041a584e38dbc35c13, type: 3}
-  - {fileID: 4710180445000989648, guid: b6c18587589658041a584e38dbc35c13, type: 3}
+  - {fileID: 4576580119240751839, guid: b1da54585424de7458fe65ddfb3ace33, type: 3}
+  - {fileID: 2327485153795757356, guid: 3bdbe34e398525040ab1f4957b8a24bd, type: 3}
+  - {fileID: -4603618077832328033, guid: 02868e1943fe61b4da29fe3f72005c4c, type: 3}
   frameRate: 24
 --- !u!114 &-3858994228399840210
 MonoBehaviour:

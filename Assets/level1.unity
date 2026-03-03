@@ -1273,13 +1273,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: cookie
       objectReference: {fileID: 0}
+    - target: {fileID: 4093365573351036585, guid: 79643753c882d5c4b9beecf2b6650a2e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 4576580119240751839, guid: b1da54585424de7458fe65ddfb3ace33, type: 3}
+    - target: {fileID: 7484452996140456064, guid: 79643753c882d5c4b9beecf2b6650a2e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7484452996140456064, guid: 79643753c882d5c4b9beecf2b6650a2e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7484452996140456064, guid: 79643753c882d5c4b9beecf2b6650a2e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.52
+      value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 7484452996140456064, guid: 79643753c882d5c4b9beecf2b6650a2e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.46
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7484452996140456064, guid: 79643753c882d5c4b9beecf2b6650a2e, type: 3}
       propertyPath: m_LocalPosition.z

@@ -25,6 +25,8 @@ public class CookieTransporter : MonoBehaviour
 
         if (playerCell.x == triggerCell.x && playerCell.y == triggerCell.y)
         {
+            triggerCell.x = 0;
+            triggerCell.y = 0;
             animCookie.PlayTransportAnimation();
             StartCoroutine(Transportation());
         }
