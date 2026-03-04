@@ -11,7 +11,6 @@ public class CookieTransporter : MonoBehaviour
     [SerializeField] Tilemap tilemap;
     [SerializeField] Transform player;
     [SerializeField] Vector3Int triggerCell;
-    [SerializeField] string nextSceneName;
     private CookieAnimation animCookie;
 
     void Start()
@@ -37,6 +36,6 @@ public class CookieTransporter : MonoBehaviour
     private IEnumerator Transportation()
     {
         yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(nextSceneName);
+        SceneManager.LoadScene("transition_scene");
     }
 }

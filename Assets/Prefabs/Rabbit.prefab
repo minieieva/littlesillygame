@@ -232,6 +232,7 @@ MonoBehaviour:
   - {fileID: 460675288698462838, guid: 00bb61e23f8596049a5112d2360b6d28, type: 3}
   frameRate: 24
   scriptFaderRef: {fileID: 0}
+  scriptLevelSwitchRef: {fileID: 0}
 --- !u!114 &-4457019330871843928
 MonoBehaviour:
   m_ObjectHideFlags: 0

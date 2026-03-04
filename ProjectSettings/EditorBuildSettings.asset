@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/starting_screen.unity
     guid: 1a0ebc7ba4a61e847aa7ecbcaac2b506
   - enabled: 0
-    path: Assets/scene_Mariia.unity
+    path: Assets/level1.unity
     guid: e58d5698bcc333d4bb7cf50f8f94edae
   - enabled: 1
     path: Assets/scene_Maya.unity
@@ -22,6 +22,9 @@ EditorBuildSettings:
     guid: abffdcaa8bce5d34a95f0df19b5f6b1d
   - enabled: 1
     path: Assets/level1.unity
-    guid: 88d082d1aadc76d4b998cf43fb4b9df9
+    guid: e58d5698bcc333d4bb7cf50f8f94edae
+  - enabled: 1
+    path: Assets/transition_scene.unity
+    guid: e60181f3d13605b43982fab2ba0951de
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
