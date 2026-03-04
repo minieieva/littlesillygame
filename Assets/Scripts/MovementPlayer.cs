@@ -130,7 +130,8 @@ public class MovementPlayer : MonoBehaviour
     {
         //set animBunny to an instance of an object for directional animation
         animBunny = GetComponent<BunnyJumpAnimation>();
-    }
+        isDead = false;
+}
 
     // Update is called once per frame
     void Update()

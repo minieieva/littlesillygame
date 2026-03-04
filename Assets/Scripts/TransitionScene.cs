@@ -1,10 +1,11 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class TransitionScene : MonoBehaviour
 {
-    [SerializeField] string nextSceneName;
+    [SerializeField] private TMP_Text scoreText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
@@ -15,7 +16,7 @@ public class TransitionScene : MonoBehaviour
     {
         // show text animation
         yield return new WaitForSeconds(2);
-
-        SceneManager.LoadScene(nextSceneName);
+        string levelScene = "level" + LevelCounter.level.ToString();
+        SceneManager.LoadScene(levelScene);
     }
 }

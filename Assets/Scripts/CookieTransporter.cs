@@ -29,11 +29,12 @@ public class CookieTransporter : MonoBehaviour
             triggerCell.x = 0;
             triggerCell.y = 0;
             animCookie.PlayTransportAnimation();
+            LevelCounter.level++;
             StartCoroutine(Transportation());
         }
     }
 
-    private IEnumerator Transportation()
+    public IEnumerator Transportation()
     {
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("transition_scene");
