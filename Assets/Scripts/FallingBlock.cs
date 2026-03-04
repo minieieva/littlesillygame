@@ -97,12 +97,8 @@ private void OnCollisionStay2D(Collision2D collision)
 
 private IEnumerator DestroyAfterDelay()
 {
-
-    // yield return new WaitForSeconds(3f);
-    // Destroy(gameObject);
-    // Destroy(targetObject);
     
     yield return new WaitForSeconds(1);
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 }
 }

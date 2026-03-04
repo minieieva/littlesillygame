@@ -10,27 +10,29 @@ public class Bunnydies : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-    }
-
-    void Start()
-    {
         scriptFaderRef = GetComponent<FaderBetweenLoses>();
     }
 
     public void Dies()
     {
-        StartCoroutine(PlayDead());
+        StartCoroutine(DieSequence());
+    }
+
+    private IEnumerator DieSequence()
+    {
+        yield return StartCoroutine(PlayDead());      // play death animation
+        yield return StartCoroutine(scriptFaderRef.FadeIn(1f)); // fade and reload
+
     }
     public IEnumerator PlayDead()
     {
         float frameDelay = 1f / frameRate;
         foreach (Sprite frame in frames)
         {
+
             spriteRenderer.sprite = frame;
             yield return new WaitForSeconds(frameDelay);
         }
-        scriptFaderRef.FadeAndLoad(1);
-
     }
 
     // Update is called once per frame

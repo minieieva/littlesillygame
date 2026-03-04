@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6023596854651913277}
   - component: {fileID: 1219390052421614071}
-  - component: {fileID: 6258929538643417163}
   - component: {fileID: 6931572903987546788}
   m_Layer: 5
   m_Name: Fader
@@ -46,19 +45,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4761047194773019306}
   m_CullTransparentMesh: 1
---- !u!114 &6258929538643417163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4761047194773019306}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e661c0db855b99844b760e5b54a39bcd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FaderBetweenLoses
-  image: {fileID: 6931572903987546788}
 --- !u!114 &6931572903987546788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.3764706}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -1,46 +1,75 @@
-//reference: https://www.youtube.com/watch?v=CrkO1Y0nHFY
 using UnityEngine;
-using Unity.Collections;
 using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
+using Unity.VisualScripting;
 
 public class FaderBetweenLoses : MonoBehaviour
 {
-    public Image image;
+    public Image image; // Assign in Inspector
 
-    public void FadeAndLoad(float duration)
+    private void Awake()
     {
-        StartCoroutine(Fader(duration));
+        // Ensure image is fully black at start
+        Color c = image.color;
+        c.a = 1f;
+        image.color = c;
     }
 
-    public IEnumerator Fader(float duration)
+    private void Start()
     {
-        float t = 0;
+        // Fade from black to transparent at scene start
+        StartCoroutine(FadeOut(2f));
+    }
+
+    // Fade from black to transparent
+    public IEnumerator FadeOut(float duration)
+    {
+        float t = 0f;
         Color c = image.color;
-        while(t< duration)
+        c.a = 1f; // start fully black
+        image.color = c;
+
+        while (t < duration)
         {
             t += Time.deltaTime;
-            c.a = t / duration;
+            c.a = Mathf.Lerp(1f, 0f, t / duration); // alpha from 1 → 0
             image.color = c;
-            yield return null; //one frame
+            yield return null;
         }
 
+        c.a = 0f;
+        image.color = c; // ensure fully transparent
+    }
+
+    // Fade from transparent to black and reload scene
+    public IEnumerator FadeIn(float duration)
+    {
+        MovementPlayer.isDead = true;
+        float t = 0f;
+        Color c = image.color;
+        c.a = 0f; // start transparent
+        image.color = c;
+
+        while (t < duration)
+        {
+            t += Time.deltaTime;
+            c.a = Mathf.Lerp(0f, 1f, t / duration); // alpha from 0 → 1
+            image.color = c;
+            yield return null;
+        }
+
+        c.a = 1f;
+        image.color = c; // ensure fully black
+
+        yield return new WaitForSeconds(0.2f); // optional pause
+        MovementPlayer.isDead = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public IEnumerator FadeOut()
+    // Convenience function
+    public void FadeToBlackAndReload(float duration)
     {
-        float t = 0;
-        Color c = image.color;
-        while (t < 1)
-        {
-            t += Time.deltaTime;
-            c.a = 1f - (t/1f);
-            image.color = c;
-            yield return null; //one frame
-        }
+        StartCoroutine(FadeIn(duration));
     }
-
-
 }
