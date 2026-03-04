@@ -172,25 +172,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6554666164088347732, guid: 21ac8a6e04de8174f82c4344416c23bc, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 623955991556519852, guid: 21ac8a6e04de8174f82c4344416c23bc, type: 3}
       propertyPath: m_Name
       value: block
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339518814839825141, guid: 21ac8a6e04de8174f82c4344416c23bc, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.25475404
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339518814839825141, guid: 21ac8a6e04de8174f82c4344416c23bc, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.25475404
-      objectReference: {fileID: 0}
-    - target: {fileID: 4339518814839825141, guid: 21ac8a6e04de8174f82c4344416c23bc, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.25475404
       objectReference: {fileID: 0}
     - target: {fileID: 4339518814839825141, guid: 21ac8a6e04de8174f82c4344416c23bc, type: 3}
       propertyPath: m_LocalPosition.x
@@ -232,10 +216,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8325176226683307928, guid: 21ac8a6e04de8174f82c4344416c23bc, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -261,18 +241,6 @@ PrefabInstance:
       propertyPath: targetObject
       value: 
       objectReference: {fileID: 1230535054}
-    - target: {fileID: 2542009547902709256, guid: c8cdaac0cdcf62343b13375832707c2f, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.25791153
-      objectReference: {fileID: 0}
-    - target: {fileID: 2542009547902709256, guid: c8cdaac0cdcf62343b13375832707c2f, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.25791153
-      objectReference: {fileID: 0}
-    - target: {fileID: 2542009547902709256, guid: c8cdaac0cdcf62343b13375832707c2f, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.25791153
-      objectReference: {fileID: 0}
     - target: {fileID: 2542009547902709256, guid: c8cdaac0cdcf62343b13375832707c2f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.5289
@@ -471,10 +439,6 @@ PrefabInstance:
       propertyPath: Tilemap
       value: 
       objectReference: {fileID: 1702637799}
-    - target: {fileID: -4457019330871843928, guid: ada6318cc45ac564d87e2ed4a8f49b92, type: 3}
-      propertyPath: pushableMask.m_Bits
-      value: 8
-      objectReference: {fileID: 0}
     - target: {fileID: 1147179389940533455, guid: ada6318cc45ac564d87e2ed4a8f49b92, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.43

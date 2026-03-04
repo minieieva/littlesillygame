@@ -40,7 +40,7 @@ public class FallingBlock : MonoBehaviour
         Vector3Int playerCell = tilemap.WorldToCell(player.position);
 
         // DEBUG: See what cell the player is currently in
-        Debug.Log("Player cell: " + playerCell + " | Trigger cell: " + triggerCell);
+        //Debug.Log("Player cell: " + playerCell + " | Trigger cell: " + triggerCell);
 
         if (playerCell.x == triggerCell.x)
         {
