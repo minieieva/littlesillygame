@@ -9,13 +9,10 @@ public class FallingBlock : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Vector3Int triggerCell;
     [SerializeField] Vector2Int direction = Vector2Int.down;
-    [SerializeField] float stepDelay = 0f;
     private Bunnydies BunnyDies;
     private Animations BlockBreaks;
     private MovementPlayer StopsMoving;
-
-    [SerializeField] GameObject targetObject;    
-
+    [SerializeField] GameObject targetObject; 
     bool moving;
     bool stopsMoving = false;
 
@@ -47,11 +44,12 @@ public class FallingBlock : MonoBehaviour
             StartCoroutine(MoveLine());
         }
 
-        if (playerCell == new Vector3Int(4, 0, 0))
-        {
-            // AI contribution: tilemap.SetTile(cellPosition, null);
-            tilemap.SetTile(new Vector3Int(5,0,0), null);
-        }
+        // if (playerCell == new Vector3Int(4, 0, 0))
+        // {
+        //     // AI contribution: tilemap.SetTile(cellPosition, null);
+        //     if (!holeRunning)
+        //         StartCoroutine(MoveHole());
+        // }
 
     }
     private void Stops()
@@ -89,26 +87,26 @@ public class FallingBlock : MonoBehaviour
         moving = false;
     }
 
-private void OnCollisionStay2D(Collision2D collision)
-{
-    if (collision.gameObject == targetObject)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        StopsMoving.Die();
-        Stops();
-        BunnyDies.Dies();
-        BlockBreaks.Dies();
-        StartCoroutine(DestroyAfterDelay());
+        if (collision.gameObject == targetObject)
+        {
+            StopsMoving.Die();
+            Stops();
+            BunnyDies.Dies();
+            BlockBreaks.Dies();
+            StartCoroutine(DestroyAfterDelay());
+        }
     }
-}
 
-private IEnumerator DestroyAfterDelay()
-{
+    private IEnumerator DestroyAfterDelay()
+    {
 
-    // yield return new WaitForSeconds(3f);
-    // Destroy(gameObject);
-    // Destroy(targetObject);
-    
-    yield return new WaitForSeconds(1);
-    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-}
+        // yield return new WaitForSeconds(3f);
+        // Destroy(gameObject);
+        // Destroy(targetObject);
+        
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
