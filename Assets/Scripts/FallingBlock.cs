@@ -47,12 +47,6 @@ public class FallingBlock : MonoBehaviour
             StartCoroutine(MoveLine());
         }
 
-        if (playerCell == new Vector3Int(4, 0, 0))
-        {
-            // AI contribution: tilemap.SetTile(cellPosition, null);
-            tilemap.SetTile(new Vector3Int(5,0,0), null);
-        }
-
     }
     private void Stops()
     {
@@ -83,7 +77,7 @@ public class FallingBlock : MonoBehaviour
 
         transform.position = nextWorldPos;
 
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(stepDelay);
         }
 
         moving = false;
