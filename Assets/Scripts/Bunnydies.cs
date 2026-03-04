@@ -12,6 +12,11 @@ public class Bunnydies : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
+    void Start()
+    {
+        scriptFaderRef = GetComponent<FaderBetweenLoses>();
+    }
+
     public void Dies()
     {
         StartCoroutine(PlayDead());
@@ -24,7 +29,7 @@ public class Bunnydies : MonoBehaviour
             spriteRenderer.sprite = frame;
             yield return new WaitForSeconds(frameDelay);
         }
-        FadeAndLoad();
+        scriptFaderRef.FadeAndLoad(1);
 
     }
 
@@ -33,4 +38,5 @@ public class Bunnydies : MonoBehaviour
     {
         
     }
+
 }
