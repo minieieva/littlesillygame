@@ -8,6 +8,7 @@ using UnityEditor.Experimental.GraphView;
 public class MovementPlayer : MonoBehaviour
 {
     [SerializeField] public Tilemap Tilemap;
+    [SerializeField] public Tilemap Walls;
     private Vector2 InitialInput;
     public Vector2 direction;
     private BunnyJumpAnimation animBunny;
@@ -69,7 +70,7 @@ public class MovementPlayer : MonoBehaviour
         // Got this solution from chatgpt
         BoundsInt bounds = Tilemap.cellBounds;
 
-        if (!bounds.Contains(TargetPosition))
+        if (!bounds.Contains(TargetPosition) || Walls.HasTile(TargetPosition))
         return;
         // 
 
