@@ -5,9 +5,9 @@ public class UiNavigation : MonoBehaviour
 {
     public void OnClickStartGame()
     {
-        string sceneDisplay = "scripts";
+        string sceneDisplay = "level1";
         Debug.Log("Start the game");
-        SceneManager.LoadScene(sceneDisplay);
+        SceneManager.LoadScene(sceneDisplay); //load level menu
     }
 
     public void OnClickExitGame()

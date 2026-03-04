@@ -9,10 +9,13 @@ public class FallingBlock : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Vector3Int triggerCell;
     [SerializeField] Vector2Int direction = Vector2Int.down;
+    [SerializeField] float stepDelay = 0f;
     private Bunnydies BunnyDies;
     private Animations BlockBreaks;
     private MovementPlayer StopsMoving;
-    [SerializeField] GameObject targetObject; 
+
+    [SerializeField] GameObject targetObject;    
+
     bool moving;
     bool stopsMoving = false;
 
@@ -37,19 +40,12 @@ public class FallingBlock : MonoBehaviour
         Vector3Int playerCell = tilemap.WorldToCell(player.position);
 
         // DEBUG: See what cell the player is currently in
-        Debug.Log("Player cell: " + playerCell + " | Trigger cell: " + triggerCell);
+        //Debug.Log("Player cell: " + playerCell + " | Trigger cell: " + triggerCell);
 
         if (playerCell.x == triggerCell.x)
         {
             StartCoroutine(MoveLine());
         }
-
-        // if (playerCell == new Vector3Int(4, 0, 0))
-        // {
-        //     // AI contribution: tilemap.SetTile(cellPosition, null);
-        //     if (!holeRunning)
-        //         StartCoroutine(MoveHole());
-        // }
 
     }
     private void Stops()
@@ -81,32 +77,28 @@ public class FallingBlock : MonoBehaviour
 
         transform.position = nextWorldPos;
 
-        yield return new WaitForSeconds(0);
+        yield return new WaitForSeconds(stepDelay);
         }
 
         moving = false;
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
+private void OnCollisionStay2D(Collision2D collision)
+{
+    if (collision.gameObject == targetObject)
     {
-        if (collision.gameObject == targetObject)
-        {
-            StopsMoving.Die();
-            Stops();
-            BunnyDies.Dies();
-            BlockBreaks.Dies();
-            StartCoroutine(DestroyAfterDelay());
-        }
+        StopsMoving.Die();
+        Stops();
+        BunnyDies.Dies();
+        BlockBreaks.Dies();
+        StartCoroutine(DestroyAfterDelay());
     }
+}
 
-    private IEnumerator DestroyAfterDelay()
-    {
-
-        // yield return new WaitForSeconds(3f);
-        // Destroy(gameObject);
-        // Destroy(targetObject);
-        
-        yield return new WaitForSeconds(1);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-    }
+private IEnumerator DestroyAfterDelay()
+{
+    
+    yield return new WaitForSeconds(1);
+    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+}
 }
