@@ -1,40 +1,44 @@
 using UnityEngine;
-using UnityEngine.Tilemaps;
-using System.Collections;
-using UnityEngine.SceneManagement;
 
-public class missingTile : MonoBehaviour
+[RequireComponent(typeof(AudioSource))]
+public class CollisionSoundPlayer : MonoBehaviour
 {
-    [SerializeField] Tilemap tilemap;
-    [SerializeField] Transform player;
-    [SerializeField] Vector3Int triggerCell;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [System.Serializable]
+    public class TagSoundPair
     {
-        
+        public string targetTag;      // Tag to detect
+        public AudioClip soundClip;   // Sound to play
+        public bool useTrigger;       // True if using trigger collision
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        Vector3Int playercell = tilemap.WorldToCell(player.position);
+    [SerializeField] private TagSoundPair[] tagSounds;
 
-        if (playercell == triggerCell)
-            TileDisappear();
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = GetComponent<AudioSource>();
     }
 
-    private void TileDisappear()
-    {
-        tilemap.SetTileFlags(triggerCell, TileFlags.None);
-        tilemap.SetColor(triggerCell, Color.black);
-    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        CheckAndPlay(collision.gameObject, false);
+    }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        CheckAndPlay(other.gameObject, true);
+    }
+
+    private void CheckAndPlay(GameObject otherObject, bool isTrigger)
+    {
+        foreach (var pair in tagSounds)
+        {
+            if (pair.useTrigger == isTrigger && otherObject.CompareTag(pair.targetTag))
+            {
+                audioSource.PlayOneShot(pair.soundClip);
+                return;
+            }
         }
     }
 }
