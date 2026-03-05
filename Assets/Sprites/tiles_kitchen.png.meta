@@ -1,22 +1,13 @@
 fileFormatVersion: 2
-guid: e418e5c958b1c944281092d4f0468e5e
+guid: 5c4f6474dfdd39c4984ba31eb10ce609
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4977805522107703622
-    second: PastelUIFreeExtras_0
+      213: -9032035668134592507
+    second: tiles_kitchen_0
   - first:
-      213: 7105208032382612391
-    second: PastelUIFreeExtras_1
-  - first:
-      213: 3982227898342526203
-    second: PastelUIFreeExtras_2
-  - first:
-      213: 8388292109288279986
-    second: PastelUIFreeExtras_3
-  - first:
-      213: 1266878750669748417
-    second: PastelUIFreeExtras_4
+      213: -1510722077259864703
+    second: tiles_kitchen_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,111 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smallBoard
+      name: tiles_kitchen_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 39
-        width: 60
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abedacd40484beab0800000000000000
-      internalID: -4977805522107703622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: soundOn
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 21
+        x: 0
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a3fa697f05ca9260800000000000000
-      internalID: 7105208032382612391
+      spriteID: 5000e22e963c7a280800000000000000
+      internalID: -9032035668134592507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: soundOff
+      name: tiles_kitchen_1
       rect:
         serializedVersion: 2
-        x: 59
-        y: 21
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfc4b5fbc27b34730800000000000000
-      internalID: 3982227898342526203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: restart
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 21
+        x: 17
+        y: 0
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2bf0756fa33396470800000000000000
-      internalID: 8388292109288279986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toLevels
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 21
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c83923f28bd49110800000000000000
-      internalID: 1266878750669748417
+      spriteID: 185e59e5646d80be0800000000000000
+      internalID: -1510722077259864703
       vertices: []
       indices: 
       edges: []
@@ -225,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 04f6a654d5bc6df4e98950bd914d53a3
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      restart: 8388292109288279986
-      smallBoard: -4977805522107703622
-      soundOff: 3982227898342526203
-      soundOn: 7105208032382612391
-      toLevels: 1266878750669748417
+      tiles_kitchen_0: -9032035668134592507
+      tiles_kitchen_1: -1510722077259864703
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

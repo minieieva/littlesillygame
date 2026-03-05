@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: e418e5c958b1c944281092d4f0468e5e
+guid: c31e22e8bab4db645aa195f3ec59520d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4977805522107703622
-    second: PastelUIFreeExtras_0
-  - first:
-      213: 7105208032382612391
-    second: PastelUIFreeExtras_1
-  - first:
-      213: 3982227898342526203
-    second: PastelUIFreeExtras_2
-  - first:
-      213: 8388292109288279986
-    second: PastelUIFreeExtras_3
-  - first:
-      213: 1266878750669748417
-    second: PastelUIFreeExtras_4
+      213: -264956926581701150
+    second: tetris-Sheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -63,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 20
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -86,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -112,33 +100,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: smallBoard
+      name: tetris-Sheet_0
       rect:
         serializedVersion: 2
-        x: 43
-        y: 39
-        width: 60
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: abedacd40484beab0800000000000000
-      internalID: -4977805522107703622
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: soundOn
-      rect:
-        serializedVersion: 2
-        x: 43
-        y: 21
+        x: 160
+        y: 0
         width: 16
         height: 16
       alignment: 0
@@ -149,74 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7a3fa697f05ca9260800000000000000
-      internalID: 7105208032382612391
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: soundOff
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 21
-        width: 16
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bfc4b5fbc27b34730800000000000000
-      internalID: 3982227898342526203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: restart
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 21
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2bf0756fa33396470800000000000000
-      internalID: 8388292109288279986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: toLevels
-      rect:
-        serializedVersion: 2
-        x: 91
-        y: 21
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c83923f28bd49110800000000000000
-      internalID: 1266878750669748417
+      spriteID: 2e5815e341fa25cf0800000000000000
+      internalID: -264956926581701150
       vertices: []
       indices: 
       edges: []
@@ -225,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 04f6a654d5bc6df4e98950bd914d53a3
+    spriteID: 616349109507f4641a815b87dc722c15
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      restart: 8388292109288279986
-      smallBoard: -4977805522107703622
-      soundOff: 3982227898342526203
-      soundOn: 7105208032382612391
-      toLevels: 1266878750669748417
+      tetris-Sheet_0: -264956926581701150
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
