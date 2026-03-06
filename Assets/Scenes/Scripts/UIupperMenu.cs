@@ -10,8 +10,7 @@ public class UIupperMenu : MonoBehaviour
 
     public void OnClickHome()
     {
-        Debug.Log("Go to levels screen when implemented");
-        //SceneManager.LoadScene("levels_screen");
+        SceneManager.LoadScene("levels_scene");
     }
 
 }
