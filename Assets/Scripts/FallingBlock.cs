@@ -9,10 +9,9 @@ public class FallingBlock : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Vector3Int triggerCell;
     [SerializeField] Vector2Int direction = Vector2Int.down;
-    [SerializeField] float stepDelay = 0f;
     private Bunnydies BunnyDies;
     private Animations BlockBreaks;
-    private MovementPlayer StopsMoving;
+    // private MovementPlayer StopsMoving;
 
     [SerializeField] GameObject targetObject;    
 
@@ -23,7 +22,7 @@ public class FallingBlock : MonoBehaviour
     {
         BunnyDies = player.GetComponent<Bunnydies>();
         BlockBreaks = GetComponent<Animations>();
-        StopsMoving = player.GetComponent<MovementPlayer>();
+        // StopsMoving = player.GetComponent<MovementPlayer>();
     }
 
     void Update()
@@ -65,40 +64,41 @@ public class FallingBlock : MonoBehaviour
 
             if (!tilemap.cellBounds.Contains(nextCell))
                 break;
-        Vector2 nextWorldPos = tilemap.GetCellCenterWorld(nextCell);
 
-        Collider2D hit = Physics2D.OverlapPoint(nextWorldPos);
+            Vector2 nextWorldPos = tilemap.GetCellCenterWorld(nextCell);
 
-        if (hit != null && hit.gameObject != gameObject)
-        {
-            // Something is blocking the fall
-            break;
-        }
+            Collider2D hit = Physics2D.OverlapPoint(nextWorldPos);
 
-        transform.position = nextWorldPos;
+            if (hit != null && hit.gameObject != gameObject)
+            {
+                // Something is blocking the fall
+                break;
+            }
 
-        yield return new WaitForSeconds(stepDelay);
+            transform.position = nextWorldPos;
+
+            yield return new WaitForSeconds(0);
         }
 
         moving = false;
     }
 
-private void OnCollisionStay2D(Collision2D collision)
-{
-    if (collision.gameObject == targetObject)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        StopsMoving.Die();
-        Stops();
-        BunnyDies.Dies();
-        BlockBreaks.Dies();
-        StartCoroutine(DestroyAfterDelay());
+        if (collision.gameObject == targetObject)
+        {
+            // StopsMoving.Die();
+            Stops();
+            BunnyDies.Dies();
+            BlockBreaks.Dies();
+            StartCoroutine(DestroyAfterDelay());
+        }
     }
-}
 
-private IEnumerator DestroyAfterDelay()
-{
-    
-    yield return new WaitForSeconds(1);
-    //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-}
+    private IEnumerator DestroyAfterDelay()
+    {
+        
+        yield return new WaitForSeconds(1);
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
 }
