@@ -11,10 +11,10 @@ TagManager:
   - Pushable
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
+  - player
+  - box
+  - obstacle
+  - wall
   - 
   - 
   - 

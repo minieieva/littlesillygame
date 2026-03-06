@@ -10,6 +10,7 @@ public class TransitionScene : MonoBehaviour
     private void Start()
     {
         StartCoroutine(LoadNext());
+        MovementPlayer.isDead = false;
     }
 
     private IEnumerator LoadNext()
@@ -17,6 +18,8 @@ public class TransitionScene : MonoBehaviour
         // show text animation
         yield return new WaitForSeconds(2);
         string levelScene = "level" + LevelCounter.level.ToString();
+
         SceneManager.LoadScene(levelScene);
+        MovementPlayer.isDead = false;
     }
 }

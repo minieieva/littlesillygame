@@ -17,7 +17,8 @@ GameObject:
   - component: {fileID: 5226278834811140853}
   - component: {fileID: -4457019330871843928}
   - component: {fileID: 5387905070521164018}
-  m_Layer: 0
+  - component: {fileID: 1165568065427754248}
+  m_Layer: 6
   m_Name: Rabbit
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -232,7 +233,6 @@ MonoBehaviour:
   - {fileID: 460675288698462838, guid: 00bb61e23f8596049a5112d2360b6d28, type: 3}
   frameRate: 24
   scriptFaderRef: {fileID: 0}
-  scriptLevelSwitchRef: {fileID: 0}
 --- !u!114 &-4457019330871843928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,6 +246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MovementPlayer
   Tilemap: {fileID: 0}
+  Walls: {fileID: 0}
   direction: {x: 0, y: 0}
   pushableMask:
     serializedVersion: 2
@@ -281,3 +282,23 @@ MonoBehaviour:
   - {fileID: 7861449940683334457, guid: 162b161da8308334b988d38619761a93, type: 3}
   - {fileID: 819485195653741036, guid: 162b161da8308334b988d38619761a93, type: 3}
   frameRate: 24
+--- !u!114 &1165568065427754248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4532282215596637541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33dfce5a374f31f429e5b831567b9a30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSFX
+  grid: {fileID: 0}
+  goal: {fileID: 0}
+  obstacles:
+    serializedVersion: 2
+    m_Bits: 256
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 512
