@@ -14,10 +14,17 @@ TagManager:
   - Pushable
   - Water
   - UI
+<<<<<<< HEAD
   - obstacle
   - player
   - 
   - 
+=======
+  - player
+  - box
+  - obstacle
+  - wall
+>>>>>>> 9210ff9 (where we stopped in class)
   - 
   - 
   - 

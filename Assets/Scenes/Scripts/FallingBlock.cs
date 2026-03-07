@@ -9,6 +9,10 @@ public class FallingBlock : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] Vector3Int triggerCell;
     [SerializeField] Vector2Int direction = Vector2Int.down;
+<<<<<<< HEAD
+=======
+    //[SerializeField] float stepDelay = 0f;
+>>>>>>> 9210ff9 (where we stopped in class)
     private Bunnydies BunnyDies;
     private Animations BlockBreaks;
     // private MovementPlayer StopsMoving;
@@ -67,7 +71,16 @@ public class FallingBlock : MonoBehaviour
 
             Vector2 nextWorldPos = tilemap.GetCellCenterWorld(nextCell);
 
+<<<<<<< HEAD
             Collider2D hit = Physics2D.OverlapPoint(nextWorldPos);
+=======
+        if (hit != null && hit.gameObject != gameObject)
+        {
+                // Something is blocking the fall
+                SoundEffects.SFX.Play(SoundEffects.SFX.boxFalling);
+                break;
+        }
+>>>>>>> 9210ff9 (where we stopped in class)
 
             if (hit != null && hit.gameObject != gameObject)
             {
@@ -75,9 +88,13 @@ public class FallingBlock : MonoBehaviour
                 break;
             }
 
+<<<<<<< HEAD
             transform.position = nextWorldPos;
 
             yield return new WaitForSeconds(0);
+=======
+        yield return new WaitForSeconds(0);
+>>>>>>> 9210ff9 (where we stopped in class)
         }
 
         moving = false;

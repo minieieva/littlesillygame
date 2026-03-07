@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: e04b1ff57edfee64baa578017e13d4de
+=======
+guid: 95e68f3af0556514c90db081697ed12c
+>>>>>>> 9210ff9 (where we stopped in class)
 PrefabImporter:
   externalObjects: {}
   userData: 

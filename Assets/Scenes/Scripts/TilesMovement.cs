@@ -27,6 +27,7 @@ public class TilesMovement : MonoBehaviour
     {
         if (tilemap == null) return;
 
+<<<<<<< HEAD
         Vector3Int bunnyLocation = tilemap.WorldToCell(transform.position);
 
         // if the position of the Bunny has no tiles then the bunny dies
@@ -36,6 +37,15 @@ public class TilesMovement : MonoBehaviour
         }
 
         if (bunnyLocation == new Vector3Int(3, 0, 0) && !holeRunning && !holeTriggered)
+=======
+        Vector3Int cell = tilemap.WorldToCell(transform.position);
+        if(tilemap.GetTile(cell) == null)
+        {
+            BunnyDies.Dies();
+        }
+
+        if (cell == new Vector3Int(2, 0, 0) && !holeRunning && !holeTriggered)
+>>>>>>> 9210ff9 (where we stopped in class)
         {
             //that stops the coroutine from starting again every frame
             holeTriggered = true;
@@ -57,8 +67,17 @@ public class TilesMovement : MonoBehaviour
 
         for (int i = 0; i < holeSteps; i++)
         {
+<<<<<<< HEAD
             
             yield return new WaitForSeconds(0.5f);
+=======
+            if(currentOriginal == null && current == transform.position)
+            {
+                BunnyDies.Dies();
+            }
+            
+            yield return new WaitForSeconds(1);
+>>>>>>> 9210ff9 (where we stopped in class)
 
             Vector3Int next = current + holeDirection;
 
