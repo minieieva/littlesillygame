@@ -66,7 +66,6 @@ MonoBehaviour:
   tilemap: {fileID: 0}
   player: {fileID: 0}
   triggerCell: {x: 4, y: -3, z: 0}
-  nextSceneName: scripts
 --- !u!212 &4093365573351036585
 SpriteRenderer:
   serializedVersion: 2
@@ -116,7 +115,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -6609440649374973478, guid: b6c18587589658041a584e38dbc35c13, type: 3}
+  m_Sprite: {fileID: 4576580119240751839, guid: b1da54585424de7458fe65ddfb3ace33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

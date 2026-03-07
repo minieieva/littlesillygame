@@ -1,5 +1,6 @@
 using UnityEngine;
 
+// source: https://tengel403.medium.com/how-to-create-an-audio-manager-in-unity-1120a77ac10b
 public class SoundEffects : MonoBehaviour
 {
     public static SoundEffects SFX;

@@ -7,8 +7,8 @@ public class PlayerSFX : MonoBehaviour
     public Tilemap grid;
 
     public Transform goal;
-    public LayerMask obstacles;
-    public LayerMask wallLayer;
+    public LayerMask obstacleLayer;
+    public Transform wallTilemap;
 
     private Vector3Int lastCell;
 
@@ -39,8 +39,7 @@ public class PlayerSFX : MonoBehaviour
 
         Vector3 nextPos = grid.GetCellCenterWorld(currentCell + direction);
 
-        Collider2D obstacle = Physics2D.OverlapPoint(nextPos, obstacles);
-        Collider2D wall = Physics2D.OverlapPoint(nextPos, wallLayer);
+        Collider2D obstacle = Physics2D.OverlapPoint(nextPos, obstacleLayer);
 
         // if the collider detects an object ahead then play a sound effect
         if (obstacle != null)
@@ -49,7 +48,9 @@ public class PlayerSFX : MonoBehaviour
             return;
         }
 
-        if (wall != null)
+        Vector3Int wall = grid.WorldToCell(wallTilemap.position);
+
+        if (currentCell == wall)
         {
             SoundEffects.SFX.Play(SoundEffects.SFX.wallHit);
             return;

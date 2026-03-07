@@ -6,8 +6,8 @@ public class FallingBoxSFX : MonoBehaviour
     // gameObjects to trigger sfx
     public Tilemap grid;
 
-    public LayerMask playerLayer;
-    public LayerMask boxLayer;
+    public Transform player;
+    public Transform pushableBlock;
 
     private Vector3Int lastCell;
 
@@ -21,7 +21,11 @@ public class FallingBoxSFX : MonoBehaviour
     void Update()
     {
         Vector3Int currentCell = grid.WorldToCell(transform.position);
-
+        
+        if (currentCell != lastCell)
+        {
+            TriggerSound(currentCell);
+        }
         // if (currentCell != lastCell)
         // {
         //     SoundEffects.SFX.Play(SoundEffects.SFX.boxMove);
@@ -30,20 +34,19 @@ public class FallingBoxSFX : MonoBehaviour
     }
 
     // check if a trigger object is ahead of the falling block
-    public void CheckBlocked(Vector2 direction)
+    public void TriggerSound(Vector3Int currentCell)
     {
-        // use the direction that block is travelling/falling to check if there is an object ahead of it
-        Vector3 checkPos = transform.position + (Vector3)direction;
+        Vector3Int playerCell = grid.WorldToCell(player.position);
+        Vector3Int blockCell = grid.WorldToCell(pushableBlock.position);
 
-        // if there is an object ahead then play a sound effect
-        if (Physics2D.OverlapPoint(checkPos, boxLayer))
-        {
-            SoundEffects.SFX.Play(SoundEffects.SFX.boxHit);
-            return;
-        }
-        if (Physics2D.OverlapPoint(checkPos, playerLayer))
+        if (playerCell == currentCell)
         {
             SoundEffects.SFX.Play(SoundEffects.SFX.bunnyDie);
+            return;
+        }
+        if (blockCell == currentCell)
+        {
+            SoundEffects.SFX.Play(SoundEffects.SFX.boxHit);
             return;
         }
     }
