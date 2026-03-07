@@ -38,5 +38,6 @@ public class CookieTransporter : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         SceneManager.LoadScene("transition_scene");
+        MovementPlayer.isDead = false;
     }
 }

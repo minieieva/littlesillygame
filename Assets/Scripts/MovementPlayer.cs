@@ -13,8 +13,9 @@ public class MovementPlayer : MonoBehaviour
     public Vector2 direction;
     private BunnyJumpAnimation animBunny;
     [SerializeField] private LayerMask pushableMask;
-    
-    
+    public static SoundEffects SFX;
+    public AudioSource audioSource;
+
     public static bool isDead = false;
 
     public void OnMove(InputValue input)
@@ -22,7 +23,7 @@ public class MovementPlayer : MonoBehaviour
         // stops the bunny from being able to still move after being hit
         if (isDead)
             return;
-        
+
 
         InitialInput = input.Get<Vector2>();
 
@@ -30,6 +31,7 @@ public class MovementPlayer : MonoBehaviour
 
         if (direction != Vector2.zero)
         {
+
             Forward(direction);
         }
         else
@@ -73,7 +75,10 @@ public class MovementPlayer : MonoBehaviour
         BoundsInt bounds = Tilemap.cellBounds;
 
         if (!bounds.Contains(TargetPosition) || Walls.HasTile(TargetPosition))
-        return;
+        {
+            SoundEffects.SFX.Play(SoundEffects.SFX.wallHit);
+            return;
+        }
         // 
 
         Vector2 FinalPosition = Tilemap.GetCellCenterWorld(TargetPosition);
@@ -87,8 +92,9 @@ public class MovementPlayer : MonoBehaviour
         // Check if a collider exist at target position https://docs.unity3d.com/ScriptReference/Physics2D.OverlapPoint.html
         Collider2D hit = Physics2D.OverlapPoint(FinalPosition, pushableMask);
 
-        if (hit != null){
-            
+        if (hit != null)
+        {
+
             Vector3Int blockTarget = TargetPosition + new Vector3Int((int)direction.x, (int)direction.y, 0);
             // Check if the target position for that block is outside the bounds
             if (!bounds.Contains(blockTarget))
@@ -98,23 +104,25 @@ public class MovementPlayer : MonoBehaviour
             Vector2 FinalblockTargetPos = Tilemap.GetCellCenterWorld(blockTarget);
             // if something there return
             if (Physics2D.OverlapPoint(FinalblockTargetPos) != null)
-                return; 
+                return;
             // else move block to target position
             hit.transform.position = FinalblockTargetPos;
+            SoundEffects.SFX.Play(SoundEffects.SFX.boxHit);
 
         }
 
         // animBunny.PlayForDuration(); // plays 24 frames = 1 sec (4 frames * 6)
         transform.position = FinalPosition;
+        SoundEffects.SFX.Play(SoundEffects.SFX.bunnyJump);
     }
 
     private Vector2 Cardinal(Vector2 InitialInput)
     {
-        if(Math.Abs(InitialInput.x) < Math.Abs(InitialInput.y))
+        if (Math.Abs(InitialInput.x) < Math.Abs(InitialInput.y))
         {
-            return new Vector2(0,Math.Sign(InitialInput.y));
+            return new Vector2(0, Math.Sign(InitialInput.y));
         }
-        if(Math.Abs(InitialInput.x) > Math.Abs(InitialInput.y))
+        if (Math.Abs(InitialInput.x) > Math.Abs(InitialInput.y))
         {
             return new Vector2(Math.Sign(InitialInput.x), 0);
         }
@@ -132,11 +140,12 @@ public class MovementPlayer : MonoBehaviour
         //set animBunny to an instance of an object for directional animation
         animBunny = GetComponent<BunnyJumpAnimation>();
         isDead = false;
-}
+        audioSource = GetComponent<AudioSource>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 }

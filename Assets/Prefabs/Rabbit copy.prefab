@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 5387905070521164018}
   - component: {fileID: 1165568065427754248}
   m_Layer: 6
-  m_Name: Rabbit
+  m_Name: Rabbit copy
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

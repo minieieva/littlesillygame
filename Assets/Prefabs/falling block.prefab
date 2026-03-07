@@ -9,12 +9,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2542009547902709256}
+  - component: {fileID: -5874068683330709147}
   - component: {fileID: -6768157828373506714}
   - component: {fileID: 5189506851435425367}
   - component: {fileID: 798095830950623013}
   - component: {fileID: 1706628686898264108}
   - component: {fileID: -4661923391808762181}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: falling block
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,6 +37,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-5874068683330709147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8109707043953952554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b42f23b4fd2884e89378fdb6f61713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FallingBoxSFX
+  grid: {fileID: 0}
+  playerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  boxLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!212 &-6768157828373506714
 SpriteRenderer:
   serializedVersion: 2

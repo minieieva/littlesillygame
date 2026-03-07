@@ -11,6 +11,8 @@ public class SoundEffects : MonoBehaviour
     public AudioClip bunnyDies;
     public AudioClip wallHit;
     public AudioClip goal;
+    public AudioClip boxFalling;
+    public AudioClip bunnyJump;
 
     [Header("Box Sounds")]
     public AudioClip bunnyDie;
