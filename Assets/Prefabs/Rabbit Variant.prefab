@@ -1,6 +1,14 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1001 &1730745930870244217
+=======
+<<<<<<< HEAD
+--- !u!1001 &8589562669476262
+=======
+--- !u!1001 &1730745930870244217
+>>>>>>> 9210ff9 (where we stopped in class)
+>>>>>>> origin/main
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -58,6 +66,19 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4532282215596637541, guid: ada6318cc45ac564d87e2ed4a8f49b92, type: 3}
       insertIndex: -1
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+      addedObject: {fileID: 5852087170590418765}
+  m_SourcePrefab: {fileID: 100100000, guid: ada6318cc45ac564d87e2ed4a8f49b92, type: 3}
+--- !u!1 &4538329351900730563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4532282215596637541, guid: ada6318cc45ac564d87e2ed4a8f49b92, type: 3}
+  m_PrefabInstance: {fileID: 8589562669476262}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5852087170590418765
+=======
+>>>>>>> origin/main
       addedObject: {fileID: 8409281761066708788}
   m_SourcePrefab: {fileID: 100100000, guid: ada6318cc45ac564d87e2ed4a8f49b92, type: 3}
 --- !u!1 &2801589611225972252 stripped
@@ -66,19 +87,44 @@ GameObject:
   m_PrefabInstance: {fileID: 1730745930870244217}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &8409281761066708788
+<<<<<<< HEAD
+=======
+>>>>>>> 9210ff9 (where we stopped in class)
+>>>>>>> origin/main
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 2801589611225972252}
+=======
+<<<<<<< HEAD
+  m_GameObject: {fileID: 4538329351900730563}
+=======
+  m_GameObject: {fileID: 2801589611225972252}
+>>>>>>> 9210ff9 (where we stopped in class)
+>>>>>>> origin/main
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b09b4237693451c4d92a166b8e3e1157, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TilesMovement
   tilemap: {fileID: 0}
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  groundTile: {fileID: 11400000, guid: dca984dbe50a42941847b19d8f38d84a, type: 2}
+  holeStart: {x: 5, y: 0, z: 0}
+  holeDirection: {x: -1, y: 0, z: 0}
+  holeSteps: 1
+=======
+>>>>>>> origin/main
   groundTile: {fileID: 0}
   holeStart: {x: 5, y: 0, z: 0}
   holeDirection: {x: -1, y: 0, z: 0}
   holeSteps: 3
+<<<<<<< HEAD
+=======
+>>>>>>> 9210ff9 (where we stopped in class)
+>>>>>>> origin/main

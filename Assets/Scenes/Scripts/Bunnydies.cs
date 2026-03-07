@@ -7,15 +7,18 @@ public class Bunnydies : MonoBehaviour
     [SerializeField] public float frameRate = 24f;
     private SpriteRenderer spriteRenderer;
     public FaderBetweenLoses scriptFaderRef;
+    private MovementPlayer stopsMoving;
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         scriptFaderRef = GetComponent<FaderBetweenLoses>();
+        stopsMoving = GetComponent<MovementPlayer>();
     }
 
     public void Dies()
     {
         StartCoroutine(DieSequence());
+        stopsMoving.Die();
     }
 
     private IEnumerator DieSequence()
